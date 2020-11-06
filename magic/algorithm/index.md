@@ -4,7 +4,7 @@
 + Hash
 + Tree
 + Heap
-    - Binary Heap
+    - [Binary Heap](./heap/binary-heap.md)
 + Graph
 
 
