@@ -33,3 +33,7 @@ kubeadm初始化命令
 ```
 kubeadm init --config <custom>.yaml [--dry-run]
 ```
+
+### sealos安装
+
+sealos init --user root --passwd scc18852851892* --master 172.19.194.11 --pkg-url /root/kube1.20.0.tar.gz --version v1.20.0 --network flannel --cert-sans 139.196.220.104
