@@ -70,7 +70,7 @@ $ tar -zxvf cni-plugins-linux-amd64-v1.1.1.tgz -C /opt/cni/bin
 在/etc/cni/net.d目录下创建一个00-default.conflist文件，写入如下内容。
 ```json
 {
-    "cniVersion": "0.3.1",
+    "cniVersion": "0.4.0",
     "name": "default",
     "plugins": [
         {
