@@ -362,8 +362,8 @@ $ ip route list
 
 ## 参考资料
 
-+ [sample plugin](https://github.com/containernetworking/plugins/tree/main/plugins/sample)
-+ [sbr plugin](https://github.com/containernetworking/plugins/tree/main/plugins/meta/sbr)
-+ [cnitool](https://www.cni.dev/docs/cnitool/)
++ [CNI示例插件](https://github.com/containernetworking/plugins/tree/main/plugins/sample)
++ [SBR插件](https://github.com/containernetworking/plugins/tree/main/plugins/meta/sbr)
++ [使用cnitool](https://www.cni.dev/docs/cnitool/)
 
 
