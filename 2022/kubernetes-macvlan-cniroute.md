@@ -232,6 +232,7 @@ func main() {
 ```
 
 ## 功能测试
+
 没有将插件应用到Kubernetes时，我们用`cnitool`这个工具对插件进行测试，可以现场装一个。
 ```bash
 go install github.com/containernetworking/cni/cnitool
@@ -358,5 +359,11 @@ $ ip route list
 ...
 192.168.1.3 dev eno1.host scope link
 ```
+
+## 参考资料
+
++ [sample plugin](https://github.com/containernetworking/plugins/tree/main/plugins/sample)
++ [sbr plugin](https://github.com/containernetworking/plugins/tree/main/plugins/meta/sbr)
++ [cnitool](https://www.cni.dev/docs/cnitool/)
 
 
