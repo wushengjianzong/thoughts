@@ -245,7 +245,7 @@ go build -o /opt/cni/bin/route main.go
 ```bash
 $ NETCONFPATH=$PWD/net.d CNI_PATH=/opt/cni/bin cnitool add default /var/run/netns/testing
 ```
-CNI插件链被成功执行，产生了一个JSON输出。这是ADD操作的执行结果，会被缓存到CNI工作目录（一般是`/var/lib/cni`）。
+CNI插件链被成功执行，产生了一个JSON输出。这是CNI插件链的执行结果，会被缓存到CNI工作目录。
 ```json
 {
     "cniVersion": "0.4.0",
@@ -281,7 +281,7 @@ $ ls /var/lib/cni/networks/default
 $ cat /var/lib/cni/networks/default/last_reserved_ip.0 
 192.168.1.2
 ```
-在`/var/lib/cni/results`下可以看到CNI ADD的结果缓存，执行DEL操作时缓存的结果会被传入。
+在`/var/lib/cni/results`下可以看到缓存的CNI执行结果，执行DEL操作时缓存内容会被传入。
 ```bash
 $ ls /var/lib/cni/results
 default-cnitool-77383ca0a0715733ca6f-eth0
