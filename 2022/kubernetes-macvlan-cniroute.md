@@ -2,7 +2,7 @@
 
 ## 实验背景
 
-上次做了一个[基于Macvlan的Kubernetes网络方案](https://wushengjianzong.github.io/thoughts/2022/kubernetes-macvlan.html)，Macvlan插件执行以后，Pod和Host网络还没有互通。于是我们创建了一个Bridge模式的Macvlan子设备，手写从Bridge到Pod的路由规则，使得Pod和Host网络互通。现在我们实现一个CNI插件，通过链式执行自动完成上面的事情。
+上次做了一个[基于Macvlan的Kubernetes网络方案](./kubernetes-macvlan-network.md)，Macvlan插件执行以后，Pod和Host网络还没有互通。于是我们创建了一个Bridge模式的Macvlan子设备，手写从Bridge到Pod的路由规则，使得Pod和Host网络互通。现在我们实现一个CNI插件，通过链式执行自动完成上面的事情。
 
 ## 创建项目
 
