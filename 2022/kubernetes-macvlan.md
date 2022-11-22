@@ -1,3 +1,5 @@
+# 当Kubernetes遇见Macvlan
+
 最近在研究KubeVirt和Virtink两个项目，计划做一个Operator管理虚拟机。Kubernetes API有望成为云计算基础设施管理的事实标准，IaaS关注计算、存储和网络，相比OpenStack，Kubernetes是一个可塑性更强的项目。  
 在Kubernetes管理虚拟机的场景下，容器网络就是虚拟机网络。目前没有做双网卡方案，我需要把容器网络拉平到物理网络，方便直接登录虚拟机。为了保持架构简单清爽，我放弃了multus、coredns和kube-proxy。这个方案仅为兴趣使然，并不适用于生产环境。
 
