@@ -7,8 +7,15 @@
 ## Super Cluster
 
 + Multi-Tenant
-+ Virtual Kubelet
-+ Kubernetes on Kubernetes(Cluster API)
+    - Projects
+        * vcluster
+        * KubeZoo
++ Virtual Node
+    - Projects
+        * virtual-kubelet
++ Kubernetes on Kubernetes
+    - Projects
+        * cluster-api
 
 ## Hybrid Deployment
 
@@ -37,7 +44,7 @@
     - CUDA/OpenCL
 + Kubernetes
     - Device Plugin
-    - Resource API(v1.26 alpha)
+    - Resource API
     - Scheduler Framework
 
 ## Compute
@@ -62,10 +69,8 @@
     - Hardware
         * VT-x
         * EPT
-        * VT-d/SR-IOV
     - Kernel
         - KVM
-        - VFIO
     - Projects
         * kata
         * qemu
@@ -91,12 +96,9 @@
         * cstor
         * jiva
 
-## CNI
+## Network
 + Specification
     - CNI(Container Network Interface)
-+ Hardware
-    - RDMA
-    - P4
 + Kernel Mode
     - Kernel
         * netfilter
